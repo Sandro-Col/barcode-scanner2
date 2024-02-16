@@ -5,6 +5,18 @@ const ProductsSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    brand: {
+        type: String,
+        required: false,
+    },
+    Category: {
+        type: String,
+        required: false,
+    },
+    name: {
+        type: String,
+        required: false,
+    },
     aisle: {
         type: Number,
         required: true,
@@ -18,6 +30,10 @@ const ProductsSchema = new mongoose.Schema({
         require: true,
     },
     shelf: {
+        type: Number,
+        required: true,
+    },
+    shelfOrder: {
         type: Number,
         required: true,
     },
